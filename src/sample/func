@@ -1,0 +1,1 @@
+python train.py --img 512 --batch 8 --epochs 30 --data dataset.yaml --cfg yolov5s.yaml --weights yolov5s.pt --workers 2 --save-period 1000 --cache

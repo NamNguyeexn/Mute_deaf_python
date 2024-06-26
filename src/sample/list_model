@@ -1,0 +1,12 @@
+model_hand = torch.hub.load('ultralytics/yolov5', 'custom',
+                       path='D:\\Tai_lieu_ki_1_nam_4\\PT_HTTM\\Mute_deaf_python\\yolov5\\runs\\train\\exp31\\weights'
+                            '\\last.pt',
+                       force_reload=True)
+model_sign = torch.hub.load('ultralytics/yolov5', 'custom',
+                       path='D:\\Tai_lieu_ki_1_nam_4\\PT_HTTM\\Mute_deaf_python\\yolov5\\runs\\train\\exp28\\weights'
+                            '\\last.pt',
+                       force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom',
+                       path='D:\\Tai_lieu_ki_1_nam_4\\PT_HTTM\\Mute_deaf_python\\yolov5\\runs\\train\\exp27\\weights'
+                            '\\last.pt',
+                       force_reload=True)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webcam Object Detection</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        #video-container {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        #video-feed {
+            width: 100%;
+            border: 2px solid #333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webcam Object Detection</h1>
+    <div id="video-container">
+        <img id="video-feed" src="{{ url_for('video_feed') }}">
+    </div>
+</body>
+</html>
