@@ -1,4 +1,4 @@
-# ** Hệ thống hỗ trợ giao tiếp người câm điếc **
+# **Hệ thống hỗ trợ giao tiếp người câm điếc**
 Hệ thống hỗ trợ việc giao tiếp với người câm điếc theo thời gian thực
 ## Mô tả các chức năng :
 - Đọc ngôn ngữ kí hiệu từ người dùng
