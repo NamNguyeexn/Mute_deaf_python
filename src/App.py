@@ -10,9 +10,8 @@ import time
 app = Flask(__name__)
 
 model = torch.hub.load('ultralytics/yolov5', 'custom',
-                       path='D:\\Tai_lieu_ki_1_nam_4\\PT_HTTM\\Mute_deaf_python\\yolov5\\runs\\train\\exp27\\weights'
-                            '\\last.pt',
-                       force_reload=True)
+    path= os.getenv('path_module'),
+    force_reload=True)
 
 
 @app.route('/')
@@ -40,7 +39,7 @@ def generate_frames():
         frame = buffer.tobytes()
 
         yield (b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+            b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
     cap.release()
 

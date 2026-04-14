@@ -13,7 +13,7 @@ label = "hand"
 number_imgs = 100
 
 IMAGES_PATH = (
-    "D:\Tai_lieu_ki_1_nam_4\PT_HTTM\Mute_deaf_python\data_canh_tay\images"
+    os.getenv("path_image")
 )
 
 cap = cv2.VideoCapture(0)
